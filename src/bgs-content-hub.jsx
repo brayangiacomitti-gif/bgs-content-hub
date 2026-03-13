@@ -1,5 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 
+const LOGO = process.env.PUBLIC_URL + "/ICONE_1.png";
+
 const SK = "bgs-hub-v7";
 const seed = {
   clients: [
@@ -288,7 +290,7 @@ export default function App() {
   if (ld || !data) return (
     <div className="bgs7" style={{ display:"flex", alignItems:"center", justifyContent:"center", height:"100vh" }}>
       <div style={{ textAlign:"center" }}>
-        <div style={{ width:48, height:48, borderRadius:14, background:`linear-gradient(135deg,${C.ac},${C.ac2})`, display:"flex", alignItems:"center", justifyContent:"center", margin:"0 auto 12px", fontSize:20, fontWeight:900, color:"#fff" }}>B</div>
+        <img src={LOGO} alt="BGS" style={{ width:48, height:48, borderRadius:14, objectFit:"cover", margin:"0 auto 12px" }} />
         <div style={{ fontSize:13, color:C.t3 }}>Carregando...</div>
       </div>
     </div>
@@ -359,7 +361,7 @@ export default function App() {
 
       {/* ═══ HEADER ═══ */}
       <header style={{ padding: mob ? "10px 14px" : "10px 20px", display:"flex", alignItems:"center", gap:10, borderBottom:`1px solid ${C.bd}`, background:C.white, flexShrink:0, zIndex:10 }}>
-        <div style={{ width:32, height:32, borderRadius:10, background:`linear-gradient(135deg,${C.ac},${C.ac2})`, display:"flex", alignItems:"center", justifyContent:"center", fontWeight:900, fontSize:14, color:"#fff" }}>B</div>
+        <img src={LOGO} alt="BGS" style={{ width:32, height:32, borderRadius:10, objectFit:"cover" }} />
         <div style={{ flex:1 }}>
           <span style={{ fontWeight:800, fontSize:15 }}>BGS Hub</span>
         </div>
