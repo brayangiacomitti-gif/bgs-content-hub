@@ -1,0 +1,8 @@
+{
+  "short_name": "BGS Hub",
+  "name": "BGS Content Hub",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#16A34A",
+  "background_color": "#F8F9FB"
+}
